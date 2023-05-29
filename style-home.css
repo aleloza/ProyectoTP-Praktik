@@ -29,6 +29,7 @@ em strong{
 
 .diferenciales{
     background: #FFFFFF;
+    /*background: linear-gradient(#FEFEFE, #888888);*/
     padding: 30px;
 }
 
@@ -37,7 +38,8 @@ em strong{
 }
 
 ul{
-    display: inline-block;
+    display: flexbox;
+    justify-content: center;
     vertical-align: top;
     width: 20%;
     margin-right: 15%;

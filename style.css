@@ -3,20 +3,23 @@ body{
 }
 
 header {
-    background-color: #BBBBBB;
-    padding: 40px 0;
+    background: url(imagenes/bg.jpg);
+    padding: 30px;
 }
 
-.caja{
-    width: 940px;
-    position: relative;
-    margin: 0 auto;
+.Logo{
+    margin-left: 10%;
+}
+
+.menu{
+    text-decoration:dashed;
+    color: rgba(255, 255, 255, 0.438);
 }
 
 nav{
     position: absolute;
-    top:110px;
-    right: 0;
+    top: 15%;
+    right: 5%;
 }
 
 nav li{
@@ -25,16 +28,21 @@ nav li{
 }
 
 nav a{
-    text-transform: uppercase;
-    color: #000000;
+    text-transform: unset;
+    color: white;
     font-weight: bold;
     font-size: 22px;
+    text-align: center;
+    display: flexbox;
+    justify-content: center;
     text-decoration: none;
 }
 
 nav a:hover{
     color: #c78c19;
-    text-decoration: underline;
+    /*text-decoration: underline;*/
+    font-weight: 500;
+    text-decoration: none;
 }
 
 .productos{
@@ -58,6 +66,7 @@ nav a:hover{
 
 .productos li:hover{
     border-color:#c78c19;
+    background-color: #888888;
 }
 
 .productos li:active{
@@ -70,7 +79,7 @@ nav a:hover{
 }
 
 .productos li:hover h2{
-    font-size: 33px;
+    color:white;
 }
 
 .producto-descripcion{
@@ -80,29 +89,68 @@ nav a:hover{
 .producto-precio{
     font-size: 20px;
     font-weight: bold;
-    margin-top:10px;
+    margin-top:10px;    
 }
 
 footer{
-    text-align: center;
     background: url(imagenes/bg.jpg);
-    padding:40px;
+    padding: 20px;
+}
+
+.datosContacto{
+    color:#FFFFFF;
+    font-size: 13px;
+    margin-left: 8%;
+    margin-right: 8%;
+    display:flex;
+    justify-content:space-around;
+}
+
+.datosContactoCentrar{
+    margin-top: 3%;
+}
+
+.datosCopy{
+    font-size: 13px;
+    color:#FFFFFF;
+    text-align: center;
 }
 
 .copyright{
     color:#FFFFFF;
     font-size: 13px;
-    margin:20px;
+    text-align: center;
 }
 
 form{
-    margin: 40px 0;
+    margin-left: 30%;
 }
 
 form label, form legend{
     display: block;
     font-size: 20px;
     margin: 0 0 10px;
+}
+
+form input {
+    font-size: 18px;
+    color:#696565;
+}
+
+form textarea {
+    font-size: 18px;
+    color:#696565;
+}
+
+.RadioContacto {
+    font-size: 10px;
+    color:#0f0f0f;
+    margin-left: 4%;
+}
+
+.label-padron{
+    font-weight: bold;
+    font-size: 22px;
 }
 
 .input-padron{
@@ -117,7 +165,8 @@ form label, form legend{
 }
 
 .enviar{
-    width: 40%;
+    width: 20%;
+    margin: 5% 0px 5% 18%;
     padding: 15px 0;
     font-size: 18px;
     font-weight: bold;
@@ -187,7 +236,7 @@ td,th{
 
 .mapa{
     padding: 3em 0;
-    background: linear-gradient(#FEFEFE, #888888)
+    background: #888888;
 }
 
 .mapa p{
@@ -202,7 +251,7 @@ td,th{
 
 .diferenciales{
     padding: 3em 0;
-    background: #888888;
+    background: linear-gradient(#FEFEFE, #888888)
 }
 
 .contenido-diferenciales{
@@ -211,9 +260,10 @@ td,th{
 }
 
 .lista-diferenciales{
+    margin-top: 2%;
     width: 40%;
     display: inline-block;
-    vertical-align: top;
+    vertical-align:top;
 }
 
 .items{
@@ -224,9 +274,11 @@ td,th{
     content:"★"
 }
 
+/*
 .items:first-child{
     font-weight: bold;
 }
+*/
 
 .imagen-diferenciales{
     width: 60%;
@@ -256,6 +308,4 @@ td,th{
     .lista-diferenciales, .imagen-diferenciales{
         width: 100%;
     }
-
 }
-

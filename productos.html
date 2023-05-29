@@ -3,18 +3,22 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Productos - Praktik S.R.L. </title>
+        <meta name="viewport" content="width=device-width"> 
+        <title>Praktik S.R.L.</title>
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <script src="bootstrap/bootstrap.bundle.js"></script>
     </head>
     <body>
         <header>
+            <img class="Logo" src="imagenes/Logo.jpg" alt="Logo">
             <div class="caja">
-                <h1><img src="imagenes/Logo.jpg"></h1>
                 <nav>
-                    <ul>
+                    <ul class="menu">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="productos.html">Servicios</a></li>
                         <li><a href="contacto.html">Contacto</a></li>
                     </ul>
                 </nav>
@@ -25,19 +29,25 @@
             <ul class="productos">
                 <li>
                     <h2>Venta de Insumos</h2>
+                    <br>
                     <img src="imagenes/Venta de Caños2.jpg">
+                    <br><br>
                     <p class="producto-descripcion">Caños, Chapas </p>
                     <p class="producto-precio">Accesorios de Herreria</p>
                 </li>
                 <li>
                     <h2>Servicio de Construccion</h2>
+                    <br>
                     <img src="imagenes/Obras2.jpg">
+                    <br><br>
                     <p class="producto-descripcion">Techos, Galpones</p>
                     <p class="producto-precio">Obras a Medida</p>
                 </li>
                 <li>
                     <h2>Servicio de Alquiler</h2>
+                    <br>
                     <img src="imagenes/Foto Obradores2.jpg">
+                    <br><br>
                     <p class="producto-descripcion">Obradores. andamios</p>
                     <p class="producto-precio">Puestos en Obra</p>
                 </li>
@@ -45,8 +55,15 @@
         </main>
 
         <footer>
-            <img src="imagenes/Logo.jpg">
-            <p class="copyright">&copy Copyright Praktik S.R.L. - 2020</p>
+            <div class="datosContacto"> 
+                <img src="imagenes/Logo.jpg"  alt="Praktik S.R.L.">
+                <p class="datosContactoCentrar">Horario: Lunes a Viernes 08:00 a 17:00 <br>Sábado 08:00 a 14:00</p>
+                <p class="datosContactoCentrar">Dirección: Ruta E53 Km 25 80 - Mendiolaza</p>
+                <p class="datosContactoCentrar">Teléfono: (0351) 537-1685</p>
+                
+            </div>
+
+            <p class="datosCopy">&copy Copyright Praktik S.R.L. - 2020</p>
         </footer>
     </body>
 </html>

@@ -3,86 +3,95 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Contacto - Praktik S.R.L.</title>
+        <meta name="viewport" content="width=device-width"> 
+        <title>Praktik S.R.L.</title>
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <script src="bootstrap/bootstrap.bundle.js"></script>
     </head>
     <body>
         <header>
+            <img class="Logo" src="imagenes/Logo.jpg" alt="Logo">
             <div class="caja">
-                <h1><img src="imagenes/Logo.jpg" alt="Praktik S.R.L."></h1>
                 <nav>
-                    <ul>
+                    <ul class="menu">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="productos.html">Servicios</a></li>
                         <li><a href="contacto.html">Contacto</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
+
         <main>
+            <br><br>
             <form>
-                <label for="nombreapellido">Nombre y Apellido</label>
+                <label class="label-padron" for="nombreapellido">Nombre y Apellido</label>
                 <input type="text" id="nombreapellido" class="input-padron" required>
 
-                <label for="correoelectronico">Correo Electrónico</label>
+                <br>
+                <label class="label-padron" for="correoelectronico">Correo Electrónico</label>
                 <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
 
-                <label for="telefono">Teléfono</label>
+                <br>
+                <label class="label-padron" for="telefono">Teléfono</label>
                 <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) XXXX XXXX">
 
-                <label for="mensaje">Mensaje</label>
+                <br>
+                <label class="label-padron" for="mensaje">Mensaje</label>
                 <textarea cols="70" rows="10" id="mensaje" class="input-padron" required></textarea>
                 
+                <br>
                 <fieldset>
-                    <legend>¿Cómo le gustaría que lo contactemos?</legend>
-
-                    <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
+                    <legend class="label-padron">¿Cómo le gustaría que lo contactemos?</legend>
                     
-                    <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Teléfono</label>
-                    
-                    <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
-                    
+                    <div class="RadioContacto">
+                        <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email" checked> Email</label>
+                        
+                        <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono"> Teléfono</label>
+                        
+                        <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp"> WhatsApp</label>
+                    </div>
                 </fieldset>
                
+                <br>
                 <fieldset>
-                    <legend>¿En cuál horario prefiere ser atendido?</legend>
-                    <select>
-                        <option>Mañana</option>
-                        <option>Tarde</option>
-                        <option>Noche</option>
-                    </select>
+                    <legend class="label-padron">¿En cuál horario prefiere ser atendido?</legend>
+                    <div class="RadioContacto">
+                        <label for="radio-mañana"><input type="radio" name="turno" value="mañana" id="radio-mañana" checked> Mañana</label>
+                        
+                        <label for="radio-tarde"><input type="radio" name="turno" value="tarde" id="radio-tarde"> Tarde</label>
+                        
+                        <label for="radio-noche"><input type="radio" name="turno" value="noche" id="radio-noche"> Noche</label>
+                    </div>
                 </fieldset>
                 
-                <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades de Praktik S.R.L.?</label>                
+                <br>
+                <fieldset>
+                    <legend class="label-padron">¿Le gustaría recibir novedades de Praktik S.R.L.?</legend>
+                    <div class="RadioContacto">
+                        <label for="radio-si"><input type="radio" name="confirma" value="si" id="radio-si" checked> Si</label>
+                        
+                        <label for="radio-no"><input type="radio" name="confirma" value="no" id="radio-no"> No</label>
+                    </div>
+                </fieldset>
                 
                 <input type="submit" value="Enviar formulario" class="enviar">
 
             </form>
-
-            <table>
-                <thead>
-                    <tr>
-                        <th>Día</th>
-                        <th>Horario</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Lunes a Viernes</td>
-                        <td>08h ~ 17h</td>
-                    </tr>
-                    <tr>
-                        <td>Sabados</td>
-                        <td>08h ~ 14h</td>
-                    </tr>
-    
-                </tbody>
-            </table>
         </main>
         <footer>
-            <img src="imagenes/Logo.jpg"  alt="Praktik S.R.L.">
-            <p class="copyright">&copy Copyright Praktik S.R.L. - 2020</p>
+            <div class="datosContacto"> 
+                <img src="imagenes/Logo.jpg"  alt="Praktik S.R.L.">
+                <p class="datosContactoCentrar">Horario: Lunes a Viernes 08:00 a 17:00 <br>Sábado 08:00 a 14:00</p>
+                <p class="datosContactoCentrar">Dirección: Ruta E53 Km 25 80 - Mendiolaza</p>
+                <p class="datosContactoCentrar">Teléfono: (0351) 537-1685</p>
+                
+            </div>
+
+            <p class="datosCopy">&copy Copyright Praktik S.R.L. - 2020</p>
         </footer>
     </body>
 </html>
